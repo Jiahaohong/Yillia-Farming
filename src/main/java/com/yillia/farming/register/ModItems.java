@@ -8,8 +8,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 
-import javax.imageio.spi.RegisterableService;
-
 public class ModItems {
     public static final CreativeModeTab FARMING_TAB = new CreativeModeTab(YilliaFarming.MOD_ID) {
         @Override
@@ -24,7 +22,6 @@ public class ModItems {
     //crop item
     public static final RegistryObject<Item> CABBAGE = ITEMS.register("cabbage", () -> new Item(new Item.Properties().tab(ModItems.FARMING_TAB).food(ModFoods.CABBAGE)));
     public static final RegistryObject<Item> CABBAGE_SEEDS = ITEMS.register("cabbage_seeds", () -> new ItemNameBlockItem(ModBlocks.CABBAGE.get(), new Item.Properties().tab(ModItems.FARMING_TAB)));
-    public static final RegistryObject<Item> CORN = ITEMS.register("corn", () -> new Item(new Item.Properties()))
     public static final RegistryObject<Item> CUCUMBER = ITEMS.register("cucumber", () -> new Item(new Item.Properties().tab(ModItems.FARMING_TAB).food(ModFoods.CUCUMBER)));
     public static final RegistryObject<Item> CUCUMBER_SEEDS = ITEMS.register("cucumber_seeds", () -> new ItemNameBlockItem(ModBlocks.CUCUMBERS.get(), new Item.Properties().tab(ModItems.FARMING_TAB)));
     public static final RegistryObject<Item> EGGPLANT = ITEMS.register("eggplant", () -> new Item(new Item.Properties().tab(ModItems.FARMING_TAB).food(ModFoods.EGGPLANT)));
