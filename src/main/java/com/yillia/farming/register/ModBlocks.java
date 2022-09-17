@@ -22,6 +22,7 @@ public class ModBlocks {
 
     //crop block
     public static final RegistryObject<Block> CABBAGE = BLOCKS.register("cabbage", () -> new CabbageBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noOcclusion()));
+    public static final RegistryObject<Block> CORN = BLOCKS.register("corn", () -> new CabbageBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noOcclusion()));
     public static final RegistryObject<Block> CUCUMBERS = BLOCKS.register("cucumbers", () -> new CucumberBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> EGGPLANT = BLOCKS.register("eggplants", () -> new EggplantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
     public static final RegistryObject<Block> RICE = BLOCKS.register("rice", () -> new RiceBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));

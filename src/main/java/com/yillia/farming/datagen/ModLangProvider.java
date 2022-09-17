@@ -18,6 +18,9 @@ public class ModLangProvider {
             add(ModItems.CABBAGE.get(), "Cabbage");
             add(ModItems.CABBAGE_SEEDS.get(), "Cabbage Seed");
 
+            add(ModItems.CORN.get(), "Corn");
+            add(ModItems.CORN_SEEDS.get(), "Corn Seed");
+
             add(ModItems.CUCUMBER.get(), "Cucumber");
             add(ModItems.CUCUMBER_SEEDS.get(), "Cucumber Seed");
 
@@ -64,11 +67,14 @@ public class ModLangProvider {
         @Override
         protected void addTranslations() {
             //crop
-            add(ModItems.CUCUMBER.get(), "黄瓜");
-            add(ModItems.CUCUMBER_SEEDS.get(), "黄瓜种子");
-
             add(ModItems.CABBAGE.get(), "卷心菜");
             add(ModItems.CABBAGE_SEEDS.get(), "卷心菜种子");
+
+            add(ModItems.CORN.get(), "玉米");
+            add(ModItems.CORN_SEEDS.get(), "玉米种子");
+
+            add(ModItems.CUCUMBER.get(), "黄瓜");
+            add(ModItems.CUCUMBER_SEEDS.get(), "黄瓜种子");
 
             add(ModItems.EGGPLANT.get(), "茄子");
             add(ModItems.EGGPLANT_SEEDS.get(), "茄子种子");

@@ -20,6 +20,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         cropItem(ModItems.CABBAGE.get());
         cropItem(ModItems.CABBAGE_SEEDS.get());
 
+        cropItem(ModItems.CORN.get());
+        cropItem(ModItems.CORN_SEEDS.get());
+
         cropItem(ModItems.CUCUMBER.get());
         cropItem(ModItems.CUCUMBER_SEEDS.get());
 
