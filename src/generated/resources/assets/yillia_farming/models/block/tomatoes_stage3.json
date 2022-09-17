@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "yillia_farming:block/tomatoes_stage3"
+  }
+}

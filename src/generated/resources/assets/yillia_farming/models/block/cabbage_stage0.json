@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "yillia_farming:block/cabbage_stage0"
+  }
+}

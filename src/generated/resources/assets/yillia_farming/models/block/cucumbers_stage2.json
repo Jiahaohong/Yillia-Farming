@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "yillia_farming:block/cucumbers_stage2"
+  }
+}
