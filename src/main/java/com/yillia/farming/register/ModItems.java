@@ -16,8 +16,7 @@ public class ModItems {
         }
     };
 
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister
-            .create(ForgeRegistries.ITEMS, YilliaFarming.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, YilliaFarming.MOD_ID);
 
     //crop item
     public static final RegistryObject<Item> CABBAGE = ITEMS.register("cabbage", () -> new Item(new Item.Properties().tab(ModItems.FARMING_TAB).food(ModFoods.CABBAGE)));

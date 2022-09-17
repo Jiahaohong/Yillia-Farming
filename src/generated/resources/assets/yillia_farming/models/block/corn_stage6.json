@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "yillia_farming:block/corn_stage6"
+  }
+}

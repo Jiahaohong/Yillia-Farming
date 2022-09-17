@@ -58,11 +58,12 @@ public class ModBlocks {
 
     public static void setRenderType(FMLClientSetupEvent event) {
         //blocks model
-        ItemBlockRenderTypes.setRenderLayer(CUCUMBERS.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(TOMATOES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(CABBAGE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(RICE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CORN.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CUCUMBERS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(EGGPLANT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(RICE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(TOMATOES.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(GIANT_CARROT.get(), RenderType.solid());
         ItemBlockRenderTypes.setRenderLayer(GIANT_POTATO.get(), RenderType.solid());

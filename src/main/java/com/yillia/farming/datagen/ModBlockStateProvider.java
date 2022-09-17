@@ -22,11 +22,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        crossCropBlock(ModBlocks.CABBAGE.get(), "cabbage_stage", "cabbage_stage");
-        crossCropBlock(ModBlocks.CUCUMBERS.get(), "cucumbers_stage", "cucumbers_stage");
-        crossCropBlock(ModBlocks.EGGPLANT.get(), "eggplants_stage", "eggplants_stage");
-        cropBlock(ModBlocks.RICE.get(), "rice_stage", "rice_stage");
-        crossCropBlock(ModBlocks.TOMATOES.get(), "tomatoes_stage", "tomatoes_stage");
+        crossCropBlock(ModBlocks.CABBAGE.get(), "cabbage_stage");
+        cropBlock(ModBlocks.CORN.get(), "corn_stage");
+        crossCropBlock(ModBlocks.CUCUMBERS.get(), "cucumbers_stage");
+        crossCropBlock(ModBlocks.EGGPLANT.get(), "eggplants_stage");
+        cropBlock(ModBlocks.RICE.get(), "rice_stage");
+        crossCropBlock(ModBlocks.TOMATOES.get(), "tomatoes_stage");
 
 //
 //        sideBottomDownBlock(ModBlocks.GIANT_CARROT.get(), "giant_carrot", "giant_carrot");
@@ -36,6 +37,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 //        sideBottomDownBlock(ModBlocks.GIANT_TOMATO.get(), "giant_tomato", "giant_tomato");
 //        sideBottomDownBlock(ModBlocks.GIANT_CUCUMBER.get(), "giant_cucumber", "giant_cucumber");
 //        sideBottomDownBlock(ModBlocks.GIANT_EGGPLANT.get(), "giant_eggplant", "giant_eggplant");
+    }
+
+    public void cropBlock(Block block, String name) {
+        cropBlock(block, name, name);
     }
 
     public void cropBlock(Block block, String modelName, String textureName) {
@@ -50,6 +55,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         return models;
     }
 
+    public void crossCropBlock(Block block, String name) {
+        crossCropBlock(block, name, name);
+    }
+
     public void crossCropBlock(Block block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> crossCropStates(state, block, modelName, textureName);
         getVariantBuilder(block).forAllStates(function);
@@ -62,12 +71,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         return models;
     }
 
+    public void sideBottomDownBlock(Block block, String name) {
+        sideBottomDownBlock(block, name, name);
+    }
+
     public void sideBottomDownBlock(Block block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> sideBottomDownStates(state, block, modelName, textureName);
         getVariantBuilder(block).forAllStates(function);
     }
 
-    private ConfiguredModel[] sideBottomDownStates(BlockState state, Block block, String modelName, String textureName) {
+    public ConfiguredModel[] sideBottomDownStates(BlockState state, Block block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().cubeBottomTop(modelName,
                 new ResourceLocation(YilliaFarming.MOD_ID, BLOCK_FOLDER + textureName + "_side"),
